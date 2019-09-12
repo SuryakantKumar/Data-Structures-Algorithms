@@ -9,11 +9,12 @@ Created on Thu Sep 12 14:38:38 2019
 '''
 Problem : Print the square character pattern for n = 5:
 
-                            ABCDE
-                            ABCDE
-                            ABCDE
-                            ABCDE
-                            ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+ABCDE
+
 '''
 n = int(input())                        # User Input
 

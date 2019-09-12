@@ -5,14 +5,14 @@ Created on Thu Sep 12 15:19:57 2019
 
 @author: suryakantkumar
 """
-
 '''
 Problem : Print the square character patter for n = 4:
     
-                                    ABCD
-                                    BCDE
-                                    CDEF
-                                    DEFG
+ABCD
+BCDE
+CDEF
+DEFG
+
 '''
 
 n = int(input())

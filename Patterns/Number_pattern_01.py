@@ -8,11 +8,12 @@ Created on Thu Sep 12 15:59:01 2019
 '''
 Problem : Print the triangualar number pattern for n = 5:
     
-                                1
-                                11
-                                121
-                                1221
-                                12221
+1
+11
+121
+1221
+12221
+
 '''
 
 n = int(input())
