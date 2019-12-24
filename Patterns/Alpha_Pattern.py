@@ -6,7 +6,7 @@ Created on Thu Sep 12 16:32:08 2019
 @author: suryakantkumar
 """
 '''
-Problem : Print triangualar chaarcter pattern for n = 5:
+Problem : Print triangular character pattern for n = 5:
     
 A
 BB
