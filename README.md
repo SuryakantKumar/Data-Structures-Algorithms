@@ -7,3 +7,4 @@ Related Topics :
 3. Functions
 4. Arrays & Lists
 5. Searching & Sorting Algorithms
+6. String Manipulation
