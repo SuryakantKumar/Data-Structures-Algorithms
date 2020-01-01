@@ -35,7 +35,6 @@ Sample Output 2:
 '''
 
 
-
 n = int(input())
 li = [int(x) for x in input().strip().split()]
 ele = int(input())
