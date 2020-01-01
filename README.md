@@ -6,3 +6,4 @@ Related Topics :
 2. Patterns
 3. Functions
 4. Arrays & Lists
+5. Searching & Sorting Algorithms
