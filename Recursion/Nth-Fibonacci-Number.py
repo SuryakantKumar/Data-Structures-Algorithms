@@ -24,7 +24,6 @@ def Fibonacci(n):
         return 1
     
     return Fibonacci(n - 1) + Fibonacci(n - 2)
-    pass
 
 n = int(input())
 result = Fibonacci(n)
