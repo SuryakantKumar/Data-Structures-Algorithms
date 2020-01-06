@@ -27,7 +27,7 @@ class Student:
     
         
 s = Student('Suryakant', 21, 90)
-# print(s.name)                    # We can not access private variables through object
+# print(s.__name)                  # We can not access private variables through object
 s.StudentDetails()                 # We can access private variables through function call
 
 print(s._Student__name)            # we can access private variable through name mangling concept (syntax : objectName._className__variableName)
