@@ -22,15 +22,17 @@ Sample Output :
 
 n = int(input('Enter Number : '))
 
-even_sum = 0
-odd_sum = 0
+even_sum = 0                # Sum of even digits of number
+odd_sum = 0             # Sum of odd digits of number
 while n != 0:
-    ls = n // 10
-    ms = n % 10
-    n = ls
-    if ms % 2 == 0:
-        even_sum = even_sum + ms
-    else:
-        odd_sum = odd_sum + ms
+    ls = n % 10             # Least significant digit
+    ms = n // 10                # Most significant digits
+    n = ms              # Update original number with most significant digits
+    
+    if ls % 2 == 0:             # If last digit is even
+        even_sum = even_sum + ls
+        
+    else:               # If last digit is odd
+        odd_sum = odd_sum + ls
         
 print(even_sum, " ", odd_sum)
