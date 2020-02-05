@@ -22,30 +22,33 @@ Sample Output 1 :
 '''
 
 
-# Solution code 1
+# Solution 01
+
 n = int(input())
 
 string = ''
 while n != 0:
-    ls = n // 2
-    ms = n % 2
-    n = ls
-    string += str(ms)
+    ms = n // 2             # Least significant digit
+    ls = n % 2              # Most significant digits 
+    n = ms              # Update original number with most significant digits
+    string += str(ls)               # Update binary string
     
-new_str = string[::-1]
+new_str = string[::-1]              # Result will be reverse of binary string
 result = int(new_str)
 print(result)  
 
 
-# Solution code 2
+
+# Solution 02 : Simple approach to find binary
+
 n = int(input())
 
 i = 1
 val = 0
 while n != 0:
-    if n % 2 != 0:
+    if n % 2 != 0:              # if remainder is 1
         val += i
-    n = n // 2
+    n = n // 2              
     i *= 10
 
 print(val)
