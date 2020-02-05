@@ -26,14 +26,15 @@ false
 n = int(input('Enter Number : '))
 
 real = n
+
 reverse = 0
-while n != 0:
-    ls = n // 10
-    ms = n % 10
-    n = ls
-    reverse = (reverse * 10) + ms
+while n != 0:               # Loop will run till n will become 0
+    ls = n % 10             # Least significant digit
+    ms = n // 10                # Most significant digits or rest digits number
+    n = ms                  # Update original number with rest digits number
+    reverse = (reverse * 10) + ls               # Update reverse
     
-palindrome = (real == reverse)
+palindrome = (real == reverse)              # Checking for palindrome
 
 if palindrome:
     print("true")
