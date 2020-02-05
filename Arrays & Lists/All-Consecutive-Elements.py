@@ -32,18 +32,18 @@ false
 
 
 def ConsecutiveSort(li, n):
-    smallest = li[0]
+    smallest = li[0]    # Finding the smallest element in array
     for ele in li:
         if ele < smallest:
             smallest = ele
     
-    sum1 = 0
-    sum2 = 0
+    sum1 = 0    # Sum of n consecutive elements starting from smallest element in array
+    sum2 = 0    # Sum of elements of given array
     for i in range(smallest, smallest + n):
         sum1 += i
         sum2 += li[i - smallest]
         
-    if sum1 == sum2:
+    if sum1 == sum2:    # If both sum are equal means, all elements are consecutive otherwise not.
         return True
     else:
         return False
