@@ -26,12 +26,12 @@ Sample Output 2 :
 891
 '''
 
-n=int(input('Enter Number : '))
+n = int(input('Enter Number : '))
 
 reverse = 0
 while n != 0:
-    ls = n // 10
-    ms = n % 10     # Most significant digit
-    n = ls
-    reverse = (reverse * 10) + ms
+    ls = n % 10             # Least significant digit
+    ms = n // 10                # Most significant digits
+    n = ms              # Updating original number with most significant digits
+    reverse = (reverse * 10) + ls               # Update Reverse of the number
 print('Reverse of Number is :', reverse)
