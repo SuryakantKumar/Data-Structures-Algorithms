@@ -22,10 +22,11 @@ Sample Output 1 :
 
 
 def squareRoot(n):
-    for i in range(1, n//2):
-        val = i*i
+    for i in range(1, n//2):		# Square root of any number lies between 1 and half of that number
+        val = i * i
+	
         if val == n:
-           	return i
+	    return i
         elif val > n:
             return i - 1
 	
