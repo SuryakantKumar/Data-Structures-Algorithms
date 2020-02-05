@@ -31,6 +31,6 @@ ef = int(input('Enter end fahrenheit Value : '))
 step = int(input('Enter step size : '))
 
 while sf <= ef:
-    celcius = int((sf - 32) * 5/9)
+    celcius = int((sf - 32) * 5/9)              # Formula for converting fahrenheit to celcius
     print(sf, "\t", celcius)
     sf += step
