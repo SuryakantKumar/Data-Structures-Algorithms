@@ -24,17 +24,18 @@ Sample Output :
 
 n = int(input('Enter Number : '))
 
-n1 = 1
-n2 = 1
+n1 = 1              # First fibonacci number
+n2 = 1              # Second fibonacci number
 if n == 1 or n == 2:
     print(1)
+    
 elif n >= 3:
-    count = 3
+    count = 3               # Next fibonacci count
     while count <= n:
-        fn = n1 + n2
+        fn = n1 + n2                # Next fibonacci number
         
-        if count == n:
+        if count == n:              # Nth fibonacci number
             print(fn)
-        n1 = n2
-        n2 = fn
+        n1 = n2             # Update first number with second number
+        n2 = fn             # Update second number with next number
         count = count + 1
