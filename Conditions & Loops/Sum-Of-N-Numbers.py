@@ -23,9 +23,9 @@ Sample Output :
 
 n = int(input("Enter value of n : "))
 
-sum = 0
-i = 1
+sum = 0             # Initial sum
+i = 1               # First number
 while i <= n:
-    sum += i
-    i += 1
+    sum += i                # Updating Sum
+    i += 1              # Increasing number to be added
 print("Sum is : ", sum)
