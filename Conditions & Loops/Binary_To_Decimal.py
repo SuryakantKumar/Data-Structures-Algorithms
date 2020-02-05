@@ -25,13 +25,14 @@ n = int(input())
 
 def B2D(n):
     decimal = 0
+    
     i = 0
     while n != 0:
-        ls = n // 10
-        ms = n % 10
-        n = ls
-        if ms == 1:
-        	decimal += 2**i
+        ls = n % 10                 # Least significant digit
+        ms = n // 10                # Most significant digits or number formed by rest digits
+        n = ms                  # Update original number with rest digits
+        if ls == 1:
+        	decimal += 2**i             # Updating decimal when binary digit is 1
         	i += 1
         else:
             i += 1
