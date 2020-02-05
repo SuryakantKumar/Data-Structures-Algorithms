@@ -24,14 +24,14 @@ Not Prime
 
 n = int(input('Enter value of N : '))
 
-d = 2
-flag = False
+d = 2               # Initial divisor is 2 because prime strts with 2
+flag = False                # Initially flag is False
 while d < n:
-    if n % d == 0:
-        flag = True
+    if n % d == 0:              # If n is divisible by any number from 2 to n - 1 then it is not a prime
+        flag = True             # Flag will become True if n is divisible by any number from 2 to n - 1
     d += 1
+    
 if flag:
     print('Not prime')
 else:
     print('prime')
-        
