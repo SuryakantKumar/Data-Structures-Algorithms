@@ -45,19 +45,26 @@ Invalid Operation
 c = int(input('Enter Choice : '))
 
 while c != 6:
-    if c >=1 and c <= 5:
+    if c >=1 and c <= 5:                # Taking inputs or operands
         a = int(input('Enter First Value : '))
         b = int(input('Enter Second Value : '))
+        
     if c == 1:
-        print(a + b)
+        print(a + b)                # Addition
+        
     elif c == 2:
-        print(a - b)
+        print(a - b)                # Subtraction
+        
     elif c == 3:
-        print(a * b)
+        print(a * b)                # Multiplication
+        
     elif c == 4:
-        print(a // b)
+        print(a // b)               # Integer Division
+        
     elif c == 5:
-        print(a % b)
+        print(a % b)                # Remider after division
+        
     elif c < 1 or c > 6:
-        print("Invalid Operation")
-    c = int(input('Enter Choice : '))
+        print("Invalid Operation")              # Invalid operation Case
+        
+    c = int(input('Enter Choice : '))               # Taking input for options
