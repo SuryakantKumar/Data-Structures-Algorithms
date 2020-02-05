@@ -18,14 +18,15 @@ Sample output 1 :
 
 n = int(input('Enter Value of N : '))
 
-k = 2
+k = 2               # First Prime number
 while k <= n:
-    d = 2
+    d = 2               # Starting divisible as 2
     flag = False
-    while d < k:
-        if k % d == 0:
+    while d < k:                # We will check k by dividing all the numbers from 2 to k -1
+        if k % d == 0:              # If k is divisible by any number then it is not a prime
             flag = True
         d += 1
-    if flag == False:
+        
+    if flag == False:               # k will be prime if not any number from 2 to k-1 can divide k
         print(k, end = ' ')
     k += 1
