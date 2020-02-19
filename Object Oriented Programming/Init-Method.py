@@ -7,8 +7,8 @@ Created on Mon Jan  6 06:17:34 2020
 """
 
 class Student:
-    def __init__(self, name, age, percentage = 80):        # Init method with default argument 'percentage'
-        self.name = name
+    def __init__(self, name, age, percentage = 80):         # Init method with default argument 'percentage'
+        self.name = name            # Instance attributes    
         self.age = age
         self.percentage = percentage
     
@@ -23,7 +23,7 @@ class Student:
         else:
             print(self.name, 'is not passed')
             
-    @staticmethod
+    @staticmethod           # static method does not need to pass default argument self
     def WelcomeToSchool():
         print('Welcome to School')
         
