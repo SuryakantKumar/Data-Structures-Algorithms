@@ -33,3 +33,4 @@ s.StudentDetails()                 # We can access private variables through fun
 print(s._Student__name)            # we can access private variable through name mangling concept (syntax : objectName._className__variableName)
 
 print(Student._Student__school)    # Accesssing private variables (making public)
+
